@@ -1,12 +1,33 @@
-# web_notes_crud_angular
-CRUD web application in Angular using HTTP Client.
+# Angular Project CRUD - Training notes
 
-Angular 14: Projeto CRUD - "Dar um nome"
 
-Sobre o projeto:
-- Adicionar um card: descrição, origem, layout.
-- Linguagem: HTML, CSS, Typescript, Angular.
--  Métodos utilizados: get, post, put e delete com a ferramenta HTTP Client.
+### <b>About Angular:</b>
+- Framework created by Google for front-end and one of the most used today. The version used is 14, released in June 2022.
 
-Sobre Angular: 
-- Framework criado pela Google para front-end e um dos mais utilizados atualmente. A versão utilizada é a 14, lançada em Junho de 2022.
+### <b>About the project:</b>
+- Objective: The purpose of this project is to record important notes about my bodybuilding workouts:
+  - Advanced techniques I use
+  - Perceptions about my body during exercise
+  - Exercises I can replace
+  - Exercises that generate the most hypertrophy
+- <strong>What it does:</strong> create cards containing description, origin, favorite layout and displays those cards/notes in a panel.
+- <strong>Language:</strong> HTML, CSS, Typescript, Angular.
+- <strong>Methods used:</strong> get, post, put and delete with the HTTP Client tool.
+
+---
+
+If you want learning how to create this project use the tutorial below:
+
+<b>How to install Angular CLI:</b>
+- It is necessary to have NodeJS (version 16.14.2)
+- To install the Angular CLI, open terminal and use command below
+
+```
+npm install -g @angular/cli@14.0.0
+```
+A layout created in figma was used for this project. You can access here: https://www.figma.com/file/Bud2WYRv0lnVXI1CyKVLTN/Training-Notes?node-id=1%3A361&t=DyKzb0noiQ7QYMVt-1
+
+
+```
+npm new training_notes
+```
