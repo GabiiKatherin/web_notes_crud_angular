@@ -19,8 +19,8 @@
 If you want learning how to create this project use the tutorial below:
 
 <b>How to install Angular CLI:</b>
-- It is necessary to have NodeJS (version 16.14.2)
-- To install the Angular CLI, open terminal and use command below
+- It is necessary to have NodeJS (version 16.14.2) because you will need to use <b>npm</b> package manager.
+- To install the Angular CLI, open terminal and use command below it is angular command line interface.
 
 ```
 npm install -g @angular/cli@14.0.0
@@ -31,3 +31,19 @@ A layout created in figma was used for this project. You can access here: https:
 ```
 npm new training_notes
 ```
+
+You will need to something questions:
+- In "Would you like to add Angular routing?" Choose <b>YES</b>
+- In "Which stylesheet format would you like to use?" Choose <b>CSS</b>
+
+Right away type this command to enter the project diretory:
+```
+cd training_notes
+```
+
+Right away type this command to run the project:
+```
+ng serve
+```
+Then copy the link written after "open your browser on".
+- The expected link is this: http://localhost:4200/
