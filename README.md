@@ -47,3 +47,14 @@ ng serve
 ```
 Then copy the link written after "open your browser on".
 - The expected link is this: http://localhost:4200/
+
+
+To create a component type command:
+```
+ng generate component home
+```
+
+not necessary explain all details about the program!! 
+
+--include Angular Extension Pack as option to use in IDE
+--include Visual Studio Code and version: 
