@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class CreateNoteComponent {
 
+  note = {
+    id:'1',
+    content: 'TEST',
+    origin:'Me',
+    model:''
+  }
+
+  constructor() {}
+  ngOnInit(): void {
+
+  }
 }

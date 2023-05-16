@@ -10,6 +10,7 @@
         id="note"
         name="note"
         placeholder="Write here what I want to remember"
+        [value]="note.content"
         >
     <label for="origin">ORIGIN</label>
       <input
@@ -18,6 +19,7 @@
         id="origin"
         name="origin"
         placeholder="Write where I got this information or the author"
+        [value]="note.origin"
         >
         <label for="model">CATEGORY</label>
           <div class="container.radio">
@@ -37,8 +39,8 @@
            Preview
             <div class="model model1 ff-roboto-mono">
              <img src="../../../../assets/images/icon-pink.png" alt="icon-pink-biceps">
-               <p class="content">Here's the Content</p>
-              <p class="author">Here's the Author</p>
+             <p class="content">{{ note.content }}</p>
+             <p class="origin">{{ note.origin }}</p>
            </div>
           </div>
 
@@ -58,8 +60,8 @@
            Preview
            <div class="model model2 ff-roboto-mono">
             <img src="../../../../assets/images/icon-green.png" alt="icon-green-biceps">
-            <p class="content">Here's the Content</p>
-            <p class="author">Here's the Author</p>
+            <p class="content">{{ note.content }}</p>
+            <p class="origin">{{ note.origin }}</p>
            </div>
           </div>
           <div class="radio-model">
@@ -78,11 +80,15 @@
            Preview
            <div class="model model3 ff-roboto-mono">
             <img src="../../../../assets/images/icon-orange.png" alt="icon-orange-biceps">
-            <p class="content">Here's the Content</p>
-            <p class="author">Here's the Author</p>
+            <p class="content">{{ note.content }}</p>
+            <p class="origin">{{ note.origin }}</p>
            </div>
           </div>
         </div>
-  </form>
+        <div class="actions">
+        <button class="buttom">Save</button>
+        <button class="buttom">Cancel</button>
+      </div>
+     </form>
 </section>
 
