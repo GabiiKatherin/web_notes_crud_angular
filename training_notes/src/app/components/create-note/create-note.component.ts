@@ -18,4 +18,13 @@ export class CreateNoteComponent {
   ngOnInit(): void {
 
   }
+
+  createNote(){
+    alert("New Note Created!")
+  }
+
+  cancelNote(){
+    alert("New Note Canceled!")
+
+  }
 }

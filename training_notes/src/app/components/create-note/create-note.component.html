@@ -10,7 +10,7 @@
         id="note"
         name="note"
         placeholder="Write here what I want to remember"
-        [value]="note.content"
+        [(ngModel)]="note.content"
         >
     <label for="origin">ORIGIN</label>
       <input
@@ -19,7 +19,7 @@
         id="origin"
         name="origin"
         placeholder="Write where I got this information or the author"
-        [value]="note.origin"
+        [(ngModel)]="note.origin"
         >
         <label for="model">CATEGORY</label>
           <div class="container.radio">
@@ -30,6 +30,7 @@
               id="model1"
               value="model1"
               name="model-card"
+              [(ngModel)]="note.model"
               >
              <div class="custom-radio">
                  <span></span>
@@ -51,6 +52,7 @@
             id="model2"
             value="model2"
             name="model-card"
+            [(ngModel)]="note.model"
             >
             <div class="custom-radio">
               <span></span>
@@ -71,6 +73,7 @@
             id="model3"
             value="model3"
             name="model-card"
+            [(ngModel)]="note.model"
             >
             <div class="custom-radio">
               <span></span>
@@ -86,8 +89,9 @@
           </div>
         </div>
         <div class="actions">
-        <button class="buttom">Save</button>
-        <button class="buttom">Cancel</button>
+        <button (click)="createNote()" class="buttom">Save</button>
+        <button (click)="cancelNote()" class="buttom">Cancel</button>
+        <!--Criando um Event Binding que é a associação de eventos o Angular-->
       </div>
      </form>
 </section>

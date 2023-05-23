@@ -29,13 +29,6 @@ A layout created in figma was used for this project. You can access here: https:
 
 
 ```
-npm new training_notes
-```
-
-You will need to something questions:
-- In "Would you like to add Angular routing?" Choose <b>YES</b>
-- In "Which stylesheet format would you like to use?" Choose <b>CSS</b>
-
 Right away type this command to enter the project diretory:
 ```
 cd training_notes
@@ -49,12 +42,6 @@ Then copy the link written after "open your browser on".
 - The expected link is this: http://localhost:4200/
 
 
-To create a component type command:
-```
-ng generate component home
-```
-
-not necessary explain all details about the program!! 
 
 --include Angular Extension Pack as option to use in IDE
 --include Visual Studio Code and version: 
