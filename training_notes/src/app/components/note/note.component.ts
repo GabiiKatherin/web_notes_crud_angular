@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-note',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoteComponent implements OnInit {
 
-  note = {
+  @Input() note = {
     content:'I love Angular',
     origin:'Gabrielli',
     model:'model3'
@@ -16,6 +16,13 @@ export class NoteComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  widthNote(): string {
+    if(this.note.content.length >= 256) {
+      return 'note-g'
+    }
+    return 'note-p'
   }
 
 }

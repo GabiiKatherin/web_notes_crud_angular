@@ -1,14 +1,14 @@
-<div class="note {{ note.model }} ff.roboto-mono note-p">
-  <img src="../../../assets/images/{{ note.model }}.png" alt="colored quotes">
+<div class="note {{ note.model }} ff-roboto-mono" [ngClass]="widthNote()">
+  <img src="../../../assets/imagens/{{ note.model }}.png" alt="colored quotes">
   <p class="content">{{ note.content }}</p>
-  <p class="origin">{{ note.origin }}</p>
+  <p class="origin"><b>{{ note.origin }}</b></p>
 
   <div class="actions">
     <button class="button-edit">
-        <img src="../../../assets/images/icon-edit" alt="">
+        <img src="../../../assets/images/icon-edit.png" alt="icon edit">
     </button>
     <button class="button-edit">
-      <img src="../../../assets/images/icon-delete" alt="">
+      <img src="../../../assets/images/icon-delete.png" alt="icon delete">
   </button>
   </div>
 
