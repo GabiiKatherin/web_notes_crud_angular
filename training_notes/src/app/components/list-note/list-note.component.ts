@@ -1,29 +1,17 @@
-import { Component } from '@angular/core';
+import { Notes } from './../../components/notes'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-note',
   templateUrl: './list-note.component.html',
   styleUrls: ['./list-note.component.css']
 })
-export class ListNoteComponent {
+export class ListNoteComponent implements OnInit {
 
-  listNotes = [
-    {
-      content:'Test',
-      origin:'Gabrielli',
-      model:'model3'
-    },
+  listNotes: Notes[] = [];
 
-    {
-      content:'Novo teste',
-      origin:'Gabrielli',
-      model:'model1'
-    },
+  constructor() {}
 
-    {
-      content:'wfkjnajnjdsnjdsafnjadsn cdmsnvkjdfnewjksfnkjdsfbWE KSNFD  VNAKVNSEKJDVNkjwnCWKNCAWKJVNEALDFKV AFEK.M DNJVAÇKSVNÇAWKJVNWÇAKJJVWNAVAJWKN ÇJFMDNVOWEÇFñvwk',
-      origin:'Gabrielli',
-      model:'model1'
-    }
-  ];
+  ngOnInit(): void {
+  }
 }

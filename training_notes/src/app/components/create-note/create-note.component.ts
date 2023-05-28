@@ -1,3 +1,4 @@
+import { Notes } from './../../components/notes'
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,11 +8,11 @@ import { Component } from '@angular/core';
 })
 export class CreateNoteComponent {
 
-  note = {
-    id:'1',
+  note: Notes = {
+    id: 1,
     content: 'TEST',
-    origin:'Me',
-    model:''
+    origin: 'Me',
+    model: ''
   }
 
   constructor() {}
