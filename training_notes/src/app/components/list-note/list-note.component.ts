@@ -1,3 +1,4 @@
+import { NoteService } from '../note.service';
 import { Notes } from './../../components/notes'
 import { Component, OnInit } from '@angular/core';
 
@@ -10,8 +11,10 @@ export class ListNoteComponent implements OnInit {
 
   listNotes: Notes[] = [];
 
-  constructor() {}
+  constructor(private service: NoteService) {}
 
   ngOnInit(): void {
+    this.service.list()
   }
+
 }
