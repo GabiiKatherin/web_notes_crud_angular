@@ -1,4 +1,4 @@
-import { Notes } from './../../components/notes';
+import { Note } from '../note';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NoteComponent implements OnInit {
 
-  @Input() note: Notes = {
+  @Input() note: Note = {
     id: 0,
     content:'I love Angular',
     origin:'Gabrielli',

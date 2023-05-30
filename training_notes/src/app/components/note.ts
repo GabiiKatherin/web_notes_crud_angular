@@ -1,4 +1,4 @@
-export interface Notes {
+export interface Note {
     id: number
     content: string
     origin: string

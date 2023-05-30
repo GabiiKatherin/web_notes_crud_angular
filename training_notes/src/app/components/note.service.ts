@@ -1,17 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Notes } from './notes';
+import { Note } from './note';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NoteService {
 
-  private readonly API = 'http://localhost:3000/notes'
+  private readonly API = 'http://localhost:3000/note'
 
   constructor(private http: HttpClient) { }
 
-  list(){
-    return this.http.get<Notes[]>(this.API);
+  list(): Observable<Note[]>{
+    return this.http.get<Note[]>(this.API);
   }
 }
