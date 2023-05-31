@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Note } from './note';
 import { Observable } from 'rxjs';
 
@@ -12,7 +12,7 @@ export class NoteService {
 
   constructor(private http: HttpClient) { }
 
-  list(): Observable<Note[]>{
-    return this.http.get<Note[]>(this.API);
+  list(): Observable<Note[]> {
+    return this.http.get<Note[]>(this.API)
   }
 }

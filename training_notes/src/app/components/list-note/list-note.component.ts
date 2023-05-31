@@ -1,4 +1,4 @@
-import { NoteService } from '../note.service';
+import { NoteService } from './../note.service';
 import { Note } from '../note'
 import { Component, OnInit } from '@angular/core';
 
@@ -15,7 +15,7 @@ export class ListNoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.list().subscribe((listNotes) => {
-      this.listNotes = this.listNotes
+      this.listNotes = listNotes
     });
 
   }
