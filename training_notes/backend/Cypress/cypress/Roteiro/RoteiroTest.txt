@@ -1,0 +1,42 @@
+[ROTEIRO LISTA DE NOTAS - 1° Acesso]
+
+Leitura da pagina inicial:
+	- Usuario ao entrar na pagina Verifica se há frase indicando a ausencia de registros. *
+
+Adição Notas ↔ [Change http://localhost:4200/list-note to http://localhost:4200/create-note]
+    - Verificar se a URL direcionada é a mesma URL é de fato a URL que necessita ser direcionada.
+	- Usuario deve clicar no botão "add notes"; * 
+            * Testado a procura do botão pela classe botão 
+            * Testado procura pelo Texto.
+        - Em caso de erro deve printar a tela; [Não necessario]
+    - Ser redirecionado para Tela criação de notas. *
+            FIM
+
+[ROTEIRO CRIAÇÃO NOTAS]
+
+    - Verifica se o campo preenchido esta vazia (NoR);
+    - Note or Remider - escrever algo ae;*
+    - Verifica se o campo preenchido esta vazia (Origin) ;
+    - Origin - escreve algo ae. *
+////
+    - Seleçao das categorias de treino -
+////
+    - Clica Save *
+    - Clica Cancel *
+            FIM        
+            
+[ROTEIRO LISTA DE NOTAS - Revisita]
+
+    - Verifica notas na tela;
+    - Clique em editar nota;
+    - Clique em excluit nota;
+            FIM
+
+[ROTEIRO VERIFICAÇÃO DE INSERTS NA TELA]
+        - Criação de nota;
+        - Campo NoR - imprime 'long text'
+        - Campo Origin - imprime 'long text'
+            
+               .if texto passa, campo categorias 
+                .screenshot.
+            FIM
