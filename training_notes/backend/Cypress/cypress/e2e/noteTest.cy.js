@@ -1,5 +1,3 @@
-const isEmpty  = " ";
-
 describe('Note List and add test pag. Puchase', () => {
         //Test to identify initial phrase to the screen
     it('Access main "notelist" and localize all graphic inserts on the screen', () => {
@@ -57,8 +55,28 @@ describe('Creating notes Test' , () => {
             cy.get('input#origin').should('have.value','');
     })
 
-    it('Choose Category', () => {
-        
+    it('Choose 1 Category', () => {
+        cy.visit('http://localhost:4200/create-note'); //Visiting Note Page
+            //Choose a category
+        cy.get('input[type="radio"][value="model1"]').should('not.be.visible');
+        cy.get('input#model1.ng-untouched.ng-pristine.ng-valid')
+            .invoke('css','display','block').check().invoke('css','display','none'); //Model1
+    })
+
+    it('Choose 2 Category', () => {
+        cy.visit('http://localhost:4200/create-note'); //Visiting Note Page
+            //Choose a category
+        cy.get('input[type="radio"][value="model2"]').should('not.be.visible');
+        cy.get('input#model2.ng-untouched.ng-pristine.ng-valid')
+            .invoke('css','display','block').check().invoke('css','display','none'); //Model2
+    })
+
+    it('Choose 3 Category', () => {
+        cy.visit('http://localhost:4200/create-note'); //Visiting Note Page
+            //Choose a category
+        cy.get('input[type="radio"][value="model2"]').should('not.be.visible');
+        cy.get('input#model3.ng-untouched.ng-pristine.ng-valid')
+            .invoke('css','display','block').check().invoke('css','display','none'); //Model3
     })
 
     it('Save Note', () => {
@@ -82,5 +100,3 @@ describe('Creating notes Test' , () => {
     })
 }
 )
-
-  
