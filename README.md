@@ -41,7 +41,7 @@ ng serve
 Then copy the link written after "open your browser on".
 - The expected link is this: http://localhost:4200/
 
-
-
 --include Angular Extension Pack as option to use in IDE
 --include Visual Studio Code and version: 
+
+ git clone -b Training-notes-w-cypresstest https://github.com/GabiiKatherin/web_notes_crud_angular  
