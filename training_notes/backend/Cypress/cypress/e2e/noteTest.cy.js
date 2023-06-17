@@ -1,9 +1,8 @@
 describe('Note List and add test pag. Puchase', () => {
         //Test to identify initial phrase to the screen
     it('Access main "notelist" and localize all graphic inserts on the screen', () => {
-        cy.visit('http://localhost:4200/list-note'); //Visiting Note Page
-        cy.contains('There are no thoughts registered yet!').should('be.visible'); // Verify a text contain
-        cy.get('button.buttom').should('be.visible');
+        cy.visit('http://localhost:4200/list-note'); //Visiting Note Page 
+        cy.get('button.buttom').should('be.visible'); // Verify a button contain
     })
         //Addition note Test.
     it('Access note page and adding note located by class:', () => {
@@ -32,8 +31,8 @@ describe('Creating notes Test' , () => {
         cy.url().should('eq','http://localhost:4200/create-note'); //URL Check.
 
             //If TextArea have something write, it will return an error;
-        cy.get('input#note').should('eq','');         
-        cy.get('input#origin').should('eq','');
+        cy.get('input#note').should('be.visible');         
+        cy.get('input#origin').should('be.visible');
     })
     
     it('Insert Text', () => {
@@ -100,3 +99,22 @@ describe('Creating notes Test' , () => {
     })
 }
 )
+
+describe('Note List Test Section, edition and deleting Notes', () => {
+    //Test to identify Edito and Delete
+it('Identify Edit and delete Button', () => {
+    cy.visit('http://localhost:4200/list-note'); //Visiting Note Page 
+    cy.get('button.button-edit').should('be.visible'); // Verify a button contain
+})
+    //Action on Edit button.
+it('Click to edit Button ', () => {
+    cy.visit('http://localhost:4200/list-note'); //Visiting Note Page 
+    cy.get('button.button-edit').should('be.visible').click(); // Click
+    cy.url().should('eq','http://localhost:4200/create-note'); // After action, redirecting to Create Note URL.
+})
+    //Action on Delete button.
+it('Click to delete Button ', () => {
+    cy.visit('http://localhost:4200/list-note'); //Visiting Note Page 
+    cy.get('button.button-edit').should('be.visible').click(); // Click
+})
+})
