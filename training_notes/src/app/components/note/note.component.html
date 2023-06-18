@@ -1,15 +1,14 @@
 <div class="note {{ note.model }} ff-roboto-mono" [ngClass]="widthNote()">
-  <img src="../../../assets/imagens/{{ note.model }}.png" alt="colored quotes">
-  <p class="content">{{ note.content }}</p>
+  <img src="../../../assets/images/{{ note.model }}.png" alt="colored quotes">
+  <p class="content">{{ note.content }}</p> <!-- Adicione esta linha para exibir o texto da nota -->
   <p class="origin"><b>{{ note.origin }}</b></p>
 
   <div class="actions">
-    <button class="button-edit">
-        <img src="../../../assets/images/icon-edit.png" alt="icon edit">
+    <button class="button-edit" routerLink="/note/editNote/{{ note.id }}" alt="icon edit">
+      <img src="../../../assets/images/icon-edit.png">
     </button>
-    <button class="button-edit">
+    <button class="button-delete" routerLink="/note/deleteNote/{{ note.id }}">
       <img src="../../../assets/images/icon-delete.png" alt="icon delete">
-  </button>
+    </button>
   </div>
-
 </div>

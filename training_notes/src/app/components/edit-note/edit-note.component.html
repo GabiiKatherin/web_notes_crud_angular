@@ -1,0 +1,95 @@
+
+<header class="header">
+  <h2>Add new notes<br>about my training:</h2>
+</header>
+<section class="container edit-note ff-inter">
+<form>
+  <label for="note">NOTE OR REMINDER</label>
+    <input
+      type="textarea"
+      class="input"
+      id="note"
+      name="note"
+      placeholder="Write here what I want to remember"
+      [(ngModel)]="note.content"
+      >
+  <label for="origin">ORIGIN</label>
+    <input
+      type="textarea"
+      class="input"
+      id="origin"
+      name="origin"
+      placeholder="Write where I got this information or the author"
+      [(ngModel)]="note.origin"
+      >
+      <label for="model">CATEGORY</label>
+        <div class="container.radio">
+          <div class="radio-model">
+      <label for="model1">
+          <input
+            type="radio"
+            id="model1"
+            value="model1"
+            name="model-card"
+            [(ngModel)]="note.model"
+            >
+           <div class="custom-radio">
+               <span></span>
+          </div>
+               <span><p>Advanced Techniques</p></span>
+         </label>
+          <div class="model model1 ff-roboto-mono">
+           <img src="../../../assets/images/icon-pink.png" alt="icon-pink-biceps">
+           <p class="content">{{ note.content }}</p>
+           <p class="origin">{{ note.origin }}</p>
+         </div>
+        </div>
+
+        <div class="radio-model">
+          <label for="model2">
+          <input
+          type="radio"
+          id="model2"
+          value="model2"
+          name="model-card"
+          [(ngModel)]="note.model"
+          >
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span><p>Goal Setting</p></span>
+         </label>
+         <div class="model model2 ff-roboto-mono">
+          <img src="../../../assets/images/icon-green.png" alt="icon-green-biceps">
+          <p class="content">{{ note.content }}</p>
+          <p class="origin">{{ note.origin }}</p>
+         </div>
+        </div>
+        <div class="radio-model">
+          <label for="model3">
+          <input
+          type="radio"
+          id="model3"
+          value="model3"
+          name="model-card"
+          [(ngModel)]="note.model"
+          >
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Nutrition and Recovery</span>
+         </label>
+         <div class="model model3 ff-roboto-mono">
+          <img src="../../../assets/images/icon-pink.png" alt="icon-orange-biceps">
+          <p class="content">{{ note.content }}</p>
+          <p class="origin">{{ note.origin }}</p>
+         </div>
+        </div>
+      </div>
+      <div class="actions">
+      <button (click)="editNote()" class="button">Save</button>
+      <button (click)="cancelNote()" class="button">Cancel</button>
+      <!--Criando um Event Binding que é a associação de eventos o Angular-->
+    </div>
+   </form>
+</section>

@@ -1,7 +1,8 @@
-<section class="container create-notes ff-inter">
+
   <header class="header">
-    <h2><span style="color: #FC68AC">Add new notes<br>about my training:</span></h2>
+    <h2>Add new notes<br>about my training:</h2>
   </header>
+  <section class="container create-note ff-inter">
   <form>
     <label for="note">NOTE OR REMINDER</label>
       <input
@@ -35,11 +36,10 @@
              <div class="custom-radio">
                  <span></span>
             </div>
-                 <span>Advanced Techniques</span>
+                 <span><p>Advanced Techniques</p></span>
            </label>
-           Preview
             <div class="model model1 ff-roboto-mono">
-             <img src="../../../../assets/images/icon-pink.png" alt="icon-pink-biceps">
+             <img src="../../../assets/images/model1.png" alt="icon-pink-biceps">
              <p class="content">{{ note.content }}</p>
              <p class="origin">{{ note.origin }}</p>
            </div>
@@ -57,11 +57,10 @@
             <div class="custom-radio">
               <span></span>
             </div>
-            <span>Goal Setting</span>
+            <span><p>Goal Setting</p></span>
            </label>
-           Preview
            <div class="model model2 ff-roboto-mono">
-            <img src="../../../../assets/images/icon-green.png" alt="icon-green-biceps">
+            <img src="../../../assets/images/model2.png" alt="icon-green-biceps">
             <p class="content">{{ note.content }}</p>
             <p class="origin">{{ note.origin }}</p>
            </div>
@@ -78,21 +77,19 @@
             <div class="custom-radio">
               <span></span>
             </div>
-            <span>Goal Setting</span>
+            <span>Nutrition and Recovery</span>
            </label>
-           Preview
            <div class="model model3 ff-roboto-mono">
-            <img src="../../../../assets/images/icon-orange.png" alt="icon-orange-biceps">
+            <img src="../../../assets/images/model3.png" alt="icon-orange-biceps">
             <p class="content">{{ note.content }}</p>
             <p class="origin">{{ note.origin }}</p>
            </div>
           </div>
         </div>
         <div class="actions">
-        <button (click)="createNote()" class="buttom">Save</button>
-        <button (click)="cancelNote()" class="buttom">Cancel</button>
+        <button (click)="createNote()" class="button">Save</button>
+        <button (click)="cancelNote()" class="button">Cancel</button>
         <!--Criando um Event Binding que é a associação de eventos o Angular-->
       </div>
      </form>
 </section>
-

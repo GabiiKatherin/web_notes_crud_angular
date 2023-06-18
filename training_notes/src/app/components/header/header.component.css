@@ -1,8 +1,30 @@
 .header {
-    background: url(../../../assets/images/background-header-2.png);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-  }
+  background: url(../../../assets/images/background-header.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  position: relative;
+}
 
+.tittle {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+}
+
+.images-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.images-header .girls {
+  max-width: 100%;
+}

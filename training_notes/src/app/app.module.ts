@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -11,6 +14,8 @@ import { CreateNoteComponent } from './components/create-note/create-note.compon
 import { FormsModule } from '@angular/forms';
 import { ListNoteComponent } from './components/list-note/list-note.component';
 import { NoteComponent } from './components/note/note.component';
+import { DeleteNoteComponent } from './components/delete-note/delete-note.component';
+import { EditNoteComponent } from './components/edit-note/edit-note.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +25,17 @@ import { NoteComponent } from './components/note/note.component';
     FooterComponent,
     CreateNoteComponent,
     ListNoteComponent,
-    NoteComponent
+    NoteComponent,
+    DeleteNoteComponent,
+    EditNoteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
